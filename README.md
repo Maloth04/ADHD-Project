@@ -2,206 +2,184 @@
 
 A Smart System for Tracking ADHD Symptoms, Cognitive Performance, and Behavioral Trends
 
-## Overview
+# Overview
 
 The AI-Enhanced ADHD Behavior Monitoring System is a desktop application that allows users to record their daily ADHD-related symptoms and habits. The system analyzes this data, generates visual trend graphs, evaluates cognitive performance, and provides automatic suggestions. Once enough data is collected, the system also uses a machine learning model to predict future cognitive scores.
 
 This project demonstrates how machine learning, data visualization, and behavioral analysis can be combined to support ADHD monitoring and self-management.
 
 # Features
-Daily ADHD Symptom Entry
+
+## Daily ADHD Symptom Entry
 
 Users record daily values such as:
 
-Focus
+- Focus
 
-Hyperactivity
+- Hyperactivity
 
-Impulsivity
+- Impulsivity
 
-Sleep hours
+- Sleep hours
 
-Distractions
+- Distractions
 
-Tasks completed
+- Tasks completed
 
-Mood
+- Mood
 
-Notes
+- Notes
 
-Screen time (newly added)
+- Screen time 
 
-Cognitive Score Calculation
+# Cognitive Score Calculation
 
 The system calculates a weighted cognitive performance score for each entry.
 
-Machine Learning Predictions
+# Machine Learning Predictions
 
 After at least 5 entries are stored, the ML model predicts:
 
-Next-day cognitive score
+- Next-day cognitive score
 
-Screen time impact trends
+- Screen time impact trends
 
-Focus trend estimation
+- Focus trend estimation
 
-Visual Trend Analysis
+## Visual Trend Analysis
 
 The application displays multiple graphs:
 
-Focus trend
+- Focus trend
 
-Cognitive score trend
+- Cognitive score trend
 
-Screen time vs cognitive score
+- Screen time vs cognitive score
 
-Mood distribution
+- Mood distribution
 
-Smart Suggestions
+## Smart Suggestions
 
 Based on recorded data, the system provides personalized insights such as:
 
-Improving sleep
+- Improving sleep
 
-Reducing screen time
+- Reducing screen time
 
-Managing distractions
+- Managing distractions
 
-Enhancing productivity habits
+- Enhancing productivity habits
 
-Data Storage
+## Data Storage
 
 All entries are saved in a local SQLite database using SQLAlchemy ORM.
 
-Report Export
-
-Users can export:
-
-Excel reports
-
-PDF summaries
-
-Tech Stack
+## Technologies Used 
 
 Language:
 
 Python 3.x
 
-Libraries:
+## Libraries:
 
-Tkinter
+- Tkinter
 
-Matplotlib
+- Matplotlib
 
-Pandas
+- Pandas
 
-SQLAlchemy
+- SQLAlchemy
 
-Scikit-learn
+- Scikit-learn
 
-FPDF
+- FPDF
 
-OpenPyXL
+- OpenPyXL
 
-TkCalendar
+- TkCalendar
 
-Win10Toast
+- Win10Toast
 
-Database:
+Database: SQLite
 
-SQLite
+# Installation and Setup
 
-Project Structure
-ADHD-Project/
-│
-├── app.py              # Main Tkinter application
-├── storage_sql.py      # Database models and CRUD operations
-├── viz.py              # Graph generation functions
-├── ml_predict.py       # Machine learning model and predictions
-├── report.py           # Excel and PDF export logic
-├── adhd_app.db         # SQLite database (auto generated)
-├── README.md           # Project documentation
-└── venv/               # Virtual environment
+## Activate Virtual Environment
+- venv\Scripts\activate
 
-Installation and Setup
-Activate Virtual Environment
-venv\Scripts\activate
+## Run the Application
+- python app.py
 
-Install Required Packages
-pip install -r requirements.txt
+# How the System Works
 
-Run the Application
-python app.py
-
-How the System Works
-Step 1: Data Entry
+## Step 1: Data Entry
 
 The user enters daily symptoms and lifestyle metrics.
 
-Step 2: Data Storage
+## Step 2: Data Storage
 
 All information is saved in a structured SQLite database.
 
-Step 3: Score Calculation
+## Step 3: Score Calculation
 
 A cognitive score is computed using weighted inputs.
 
-Step 4: Graph Visualization
+## Step 4: Graph Visualization
 
 The application generates visual charts showing performance trends across days.
 
-Step 5: AI Prediction
+## Step 5: AI Prediction
 
 Once sufficient data is available, the ML model predicts future cognitive performance.
 
-Machine Learning Model
+# Machine Learning Model
 
-Algorithm:
+## Algorithm:
 
-Linear Regression
+- Linear Regression
 
-Input Features:
+## Input Features:
 
-Focus
+- Focus
 
-Sleep
+- Sleep
 
-Tasks completed
+- Tasks completed
 
-Screen time
+- Screen time
 
-Output:
+## Output:
 
-Cognitive score prediction
+- Cognitive score prediction
 
 The model automatically retrains when new data is added.
 
-Use Cases
+# Use Cases
 
-ADHD monitoring
+- ADHD monitoring
 
-Academic projects
+- Academic projects
 
-Behavioral research
+- Behavioral research
 
-Data visualization and ML demonstration
+- Data visualization and ML demonstration
 
-Mental health tracking systems
+- Mental health tracking systems
 
-Future Enhancements
+# Future Enhancements
 
-Mobile app version
+- Mobile app version
 
-Cloud data syncing
+- Cloud data syncing
 
-Automated weekly reports
+- Automated weekly reports
 
-Chat-based AI suggestions
+- Chat-based AI suggestions
 
-Voice-based emotional analysis
+- Voice-based emotional analysis
 
-Real-time notifications and reminders
+- Real-time notifications and reminders
 
-Conclusion
+# Conclusion
 
 The AI-Enhanced ADHD Monitoring System provides a structured way to record daily symptoms, analyze behavioral patterns, and receive insights based on machine learning. It demonstrates a complete pipeline that combines data input, database storage, analytics, AI prediction, and reporting. This system can be expanded further as a practical support tool for mental health tracking. a practical support tool for mental health tracking.
