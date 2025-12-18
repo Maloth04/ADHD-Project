@@ -76,9 +76,7 @@ All entries are saved in a local SQLite database using SQLAlchemy ORM.
 
 ## Technologies Used 
 
-Language:
-
-Python 3.x
+Language: Python 3.x
 
 ## Libraries:
 
